@@ -21,10 +21,10 @@ public class WilliamsJ_P2 {
       int num1 = keyboard.nextInt();
       System.out.println("Enter a different integer");
       int num2 = keyboard.nextInt();
-      if(num1 == num2)
+      while(num1 == num2)
       {
-         System.out.println("Not cool. I asked for a different number");   
-         return;
+         System.out.println("This number must be different from the first, please reenter");   
+         num2 = keyboard.nextInt();
       }
       
       int smallest = num1 < num2 ? num1 : num2; 
